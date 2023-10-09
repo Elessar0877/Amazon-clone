@@ -1,0 +1,24 @@
+main
+    @include flex-box(flex, center, null, 20px)
+    flex-wrap: wrap
+    padding: 250px 10px 20px 10px
+    height: auto
+    background-color: rgb(223,230,230)
+    background-image: url("Images/fondo2.jpg")
+    background-size: 100%
+    background-repeat: no-repeat
+    
+    div
+        @include flex-box(flex, center, start, 15px)
+        flex-direction: column
+        padding: 20px
+        @include sizes(330px, 420px, null)
+        background-color: white
+
+        img
+            @include sizes(295px, 300px, null)
+
+        a
+            text-decoration: none
+            font-size: 13px
+            color: #007185

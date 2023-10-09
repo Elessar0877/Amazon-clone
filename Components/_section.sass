@@ -1,0 +1,27 @@
+section
+    display: flex
+    align-items: center
+    height: 200px
+    background-color: white
+    padding-top: 29px
+    
+    div
+        @include flex-box(flex, center, center, 5px)
+        flex-direction: column
+        padding-top: 20px
+        @include sizes(100%, 130px, null)
+        border: solid 1px rgb(221, 221, 221)
+        background-color: white
+        
+        #first-span
+            font-size: 13px
+        
+        button
+            @include sizes(235px, 30px, null)
+            background-image: url("images/yellow-button.png")
+            background-size: cover
+            border: 1px solid rgb(230, 164, 0)
+            border-radius: 5px
+             
+        #second-span
+            font-size: 11px

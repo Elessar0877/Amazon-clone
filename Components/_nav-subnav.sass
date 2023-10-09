@@ -1,0 +1,147 @@
+nav
+.nav1
+    @include flex-box(flex, start, center, 9px)
+    padding: 0px 15px
+    height: 60px
+    background-color: rgb(19,25,33)
+    
+    div
+        display: flex
+        align-items: center
+        height: 60px
+
+    .div1-nav
+        width: auto
+
+        .button1-nav
+            justify-content: center
+            width: 120px
+            &:hover
+                border: solid 1px white
+                cursor: pointer
+
+            img
+                width: 100px 
+        
+        .button2-nav
+            justify-content: center
+            width: 100px
+            
+            &:hover
+                border: solid 1px white
+                cursor: pointer
+
+            img
+                width: 18px
+
+            span
+                @include text(14px, bold, white)
+                
+            span::first-line
+                @include text(12px, normal, rgb(193, 193, 193))
+                
+    .div2-nav
+        width: 54%
+        select
+            border-radius: 5px 0px 0px 5px
+            padding: 6px
+            @include sizes(70px, 42px, 12px)
+            background-color: rgb(230, 230, 230)
+            &:hover
+                background-color: rgb(212, 212, 212)
+                cursor: pointer
+        
+        input
+            position: absolute
+            padding-left: 5px
+            left: 312px
+            @include sizes(640px, 42px, 14px)
+                       
+        button
+            position: absolute
+            left: 950px
+            @include sizes(42px,40px, null)
+            border-radius: 0px 5px 5px 0px
+            border: none
+            background-color: rgb(254, 189, 105)
+            img
+                width: 25px
+            &:hover
+                background-color: rgb(243, 168, 71)
+                cursor: pointer
+
+    .div3-nav
+        width: 400px
+
+        .button3-nav
+            justify-content: center 
+            width: 70px
+            &:hover
+                border: solid 1px white
+                cursor: pointer
+            
+            #flag
+                width: 20px
+
+            span
+                @include text(13px, bold, white)
+
+            #arrow
+                width: 15px
+        
+        .button4-nav
+            justify-content: center 
+            width: 130px
+            &:hover
+                border: solid 1px white
+                cursor: pointer
+
+            span
+                @include text(13px, bold, white)
+            span::first-line
+                font-weight: normal
+
+            img
+                width: 15px
+
+        .button5-nav
+            justify-content: center 
+            width: 100px
+            &:hover
+                border: solid 1px white
+                cursor: pointer
+            
+            span
+                @include text(13px, bold, white)
+                
+            span::first-line
+                font-weight: normal
+        
+        .button6-nav
+            justify-content: center 
+            width: 100px
+            &:hover
+                border: solid 1px white
+                cursor: pointer
+            
+            span
+                @include text(14px, bold, white)
+                
+
+.sub-nav
+    @include flex-box(flex, null, center, 2px)
+    padding: 0px 8px
+    background-color: rgb(35, 47, 62)
+    height: 40px
+
+    div
+        display: flex
+        align-items: center
+        padding: 0px 7px
+        @include sizes(auto, 38px, 14px)
+        border: solid 1px transparent
+        color: white
+        
+        &:hover
+            border-color:  white
+            cursor: pointer

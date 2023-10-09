@@ -1,0 +1,98 @@
+footer
+    height: auto
+    
+    .div1-foot
+        @include flex-box(flex, center, null, 105px)
+        padding-top: 40px
+        background-color: #232F3E
+        height: 415px
+        border-bottom: 1px solid #3A4553
+        
+        ul
+            
+            list-style: none
+
+            .title-list
+                @include text(16px, bold, white)
+            
+            li
+                margin: 12px 0px
+                color: #DDDDCE
+                font-size: 14px
+
+    .div2-foot
+        @include flex-box(flex, center, center, 100px)
+        background-color: #232F3E
+        height: 110px
+
+        a
+            img
+                width: 80px
+
+        div
+            @include flex-box(flex, start, center, 10px)
+            width: 505px
+            background-color: #232F3E
+
+            #language-footer
+                @include flex-box(flex, space-around, center, null)
+                @include sizes(120px, 34px, null)
+                background: none
+                border: 1px solid #BBBBBB
+                border-radius: 2px
+                color: #CCCCCC
+
+            #cash-footer
+                display: flex
+                padding-left: 8px
+                align-items: center
+                @include sizes(215px, 34px, null)
+                background: none
+                border: 1px solid #BBBBBB
+                border-radius: 2px
+                color: #CCCCCC
+
+            #country-footer
+                @include flex-box(flex, null, center, 5px)
+                padding-left: 8px
+                @include sizes(150px, 34px, null)
+                background: none
+                border: 1px solid #BBBBBB
+                border-radius: 2px
+                color: #CCCCCC
+
+                img
+                    width: 18px
+             
+    .div3-foot
+        display: flex
+        justify-content: center
+        background-color: #131A22
+        height: 539px
+
+        table
+            font-size: 12px
+            color: #999999
+
+        .separation-table
+            width: 3%
+
+    .div4-foot
+        @include flex-box(flex, center, center, null)
+        flex-direction: column
+        height: 100px
+        background-color: #131A22
+
+        ul
+            display: flex
+            list-style: none
+            gap: 10px
+            
+            a
+                font-size: 12px
+                color: #999999
+                text-decoration: none
+
+        span
+            font-size: 12px
+            color: #999999
